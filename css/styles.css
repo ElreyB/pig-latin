@@ -1,0 +1,18 @@
+body{
+  background-image: url(../img/piggyjpg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.pLatin {
+  color: #181820;
+
+}
+
+.well{
+  width: 184px;
+  display: none;
+  float: right;
+  margin-right:-25px;
+}

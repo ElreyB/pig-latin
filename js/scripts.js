@@ -13,9 +13,8 @@ function removeQu(word){
   return newWord[0];
 }
 
-
 var pigLatin = function translate(word) {
-  debugger;
+
   if (word.match(/[^a-z]/i)){
       return word;
   } else if (word[0].match(/[aeiou]/i)){
@@ -31,7 +30,6 @@ var pigLatin = function translate(word) {
   }
 };
 
-
 // user interface logic
 $(document).ready(function() {
   $("form#pre-latin").submit(function(event) {
@@ -39,7 +37,7 @@ $(document).ready(function() {
 
     var wordInput = $("input#english").val();
     var result = pigLatin(wordInput);
-
+    $(".well").show();
     $(".pLatin").text(result);
 
   });

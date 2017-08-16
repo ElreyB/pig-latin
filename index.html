@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -9,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Pig Latin Generator</h1>
+      <h1><i class="glyphicon glyphicon-piggy-bank"></i>Latin Generator</h1>
 
       <form id="pre-latin">
         <div class="form-group">
@@ -19,9 +20,11 @@
 
         <button type="submit" class="btn">ubmitsway</button>
       </form>
-
+      <br>
       <div id="pig-latin">
-        <p><span class="pLatin"></span></p>
+        <div class="well">
+          <h3><span class="pLatin"></span></h3>
+        </div>
       </div>
     </div>
   </body>
