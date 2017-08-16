@@ -1,10 +1,27 @@
 // business logic
-var pigLatin = function translate(word) {
-  if (word.match(/[^a-z]/)){
-      return word;
-    } else if (word[0].match(/[aeiou]/)){
-      return word + "way";
+function removeConsonants(word){
+  var newWord = "";
+  var letters = word.split("");
+  letters.forEach(function(letter){
+    if (letter.match(/[aeiou]/i)){
+      newWord += letter;
     }
+  });
+  return newWord;
+}
+
+
+var pigLatin = function translate(word) {
+  // debugger;
+  if (word.match(/[^a-z]/i)){
+      return word;
+    } else if (word[0].match(/[aeiou]/i)){
+      return word + "way";
+  } else if (word.match(/[^aeiou]/)){
+    var consonants = word.match(/[^aeiou]*/);
+    var pigLatin =
+    console.log(word)
+  }
 };
 
 
