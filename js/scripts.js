@@ -1,8 +1,9 @@
 // business logic
 var pigLatin = function translate(word) {
-  debugger;
   if (word.match(/[^a-z]/)){
       return word;
+    } else if (word[0].match(/[aeiou]/)){
+      return word + "way";
     }
 };
 
